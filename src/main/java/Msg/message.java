@@ -93,5 +93,10 @@ Consumer<Integer> t = (i)-> System.out.println(i);
             }
         };
         System.out.println(name.get());
+
+Biscuit b = new Biscuit();
+        b.chocolateType();
+        Weaver w = new Weaver();
+        System.out.println(w.chocolatePrice());
     }
 }
