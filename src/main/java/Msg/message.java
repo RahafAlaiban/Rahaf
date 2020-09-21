@@ -98,5 +98,9 @@ Biscuit b = new Biscuit();
         b.chocolateType();
         Weaver w = new Weaver();
         System.out.println(w.chocolatePrice());
+
+        SizeTestCaller s = new SizeTestCaller();
+        System.out.println(s.arr(3));
+        System.out.println(s.testSet(2));
     }
 }
