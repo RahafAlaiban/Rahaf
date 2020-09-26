@@ -1,5 +1,6 @@
 plugins {
     id 'war'
+  //  id 'org.springframework.boot' version '1.4.3.RELEASE'
 }
 
 group 'org.example'
@@ -11,4 +12,7 @@ repositories {
 
 dependencies {
     providedCompile fileTree(dir: 'lib', include: ['javaee-api-8.0.jar'])
+
+    compileOnly "org.projectlombok:lombok:1.16.16"
+
 }

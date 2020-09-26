@@ -102,5 +102,8 @@ Biscuit b = new Biscuit();
         SizeTestCaller s = new SizeTestCaller();
         System.out.println(s.arr(3));
         System.out.println(s.testSet(2));
+        OperatorList op = new OperatorList();
+        op.OperatorList("Rahaf",2, "test", 1, 'F');
+
     }
 }
