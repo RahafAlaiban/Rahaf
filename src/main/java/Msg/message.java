@@ -1,6 +1,8 @@
 package Msg;
 
 //import javax.xml.bind.annotation.XmlRootElement;
+
+
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -62,7 +64,7 @@ public class message {
 }
 
     public static void main(String[] args) {
-        Msg.message m = new message();
+    /*    Msg.message m = new message();
         m.getMsg();
         System.out.println("Test");
 
@@ -101,9 +103,15 @@ Biscuit b = new Biscuit();
 
         SizeTestCaller s = new SizeTestCaller();
         System.out.println(s.arr(3));
-        System.out.println(s.testSet(2));
-        OperatorList op = new OperatorList();
-        op.OperatorList("Rahaf",2, "test", 1, 'F');
+        System.out.println(s.testSet(2));*/
 
+        OperatorList op = new OperatorList("Rahaf",1, "test", 1, 'F');
+        op.OperatorList();
+        OperatorList op2 = new OperatorList("Rahaf",2, "test", 2, 'F');
+        op2.OperatorList();
+        OperatorList op3 = new OperatorList("Rahaf",3, "test", 1, 'F');
+        op3.OperatorList();
+        OperatorList op4 = new OperatorList("Rahaf",4, "test", 2, 'F');
+        op4.OperatorList();
     }
 }

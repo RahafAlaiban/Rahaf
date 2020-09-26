@@ -2,15 +2,19 @@ package Msg;
 
  public class OperatorList {
 
-    Operator  operators[] ;
+    Operator  operators[] = new Operator[1];
 
 
-    public Operator [] OperatorList (String firstName, long id, String email, int status, char gender) {
+     public OperatorList(String firstName, long id, String email, int status, char gender) {
+         for (int i =0; i< operators.length; i++){
+             operators[i] = new Operator (firstName,id, email, status, gender);
+         }
+     }
+
+     public Operator [] OperatorList () {
 
         for (int i =0;i< operators.length; i++){
-            Operator operator = new Operator(firstName,id, email, status, gender);
-            operators[i] = operator;
-            System.out.println(operators[i]);
+            System.out.println(operators[i].firstName + " " + operators[i].id + " " + operators[i].email + " " + operators[i].status + " "+ operators[i].gender);
         }
         return operators ;
 
